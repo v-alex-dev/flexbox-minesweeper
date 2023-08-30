@@ -1,0 +1,119 @@
+html{
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: antiquewhite;
+}
+
+header {
+  margin: 5rem auto;
+  text-align: center;
+}
+
+section {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  
+  width: 400px;
+  height: 400px;
+  background-color: gainsboro;
+  
+  border: groove rgb(223, 223, 223) 10px;
+  border-right: solid white 10px;
+  border-left: ridge lightgrey 10px;
+  border-top: ridge lightgray 10px;
+  border-bottom: ridge white 10px;
+}
+
+
+.row {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50px ;
+
+  position: relative;
+  
+  overflow: hidden;
+}
+
+.case {
+  background-color: lightgrey;
+  height: 100%;
+
+  border: ridge black 2px;
+  border-style: dashed;
+  border-collapse: collapse;
+    
+  border-top: none;
+}
+
+.mine {
+  background-image: url(./bomb.gif);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.one::before {
+  content: "1";
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 250%;
+  color: blue;
+
+}
+
+.two::before {
+  content: "2";
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 250%;
+  color: green;
+
+}
+
+.three::before {
+  content: "3";
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 250%;
+  color: red;
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+
+  
+  border-style: ridge;
+  border-color: gray;
+}
+
+.case:nth-child(n + 1) {
+  border-left: none;
+}
