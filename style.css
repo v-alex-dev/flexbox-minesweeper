@@ -47,11 +47,11 @@ section {
   background-color: lightgrey;
   height: 100%;
 
-  border: ridge black 2px;
-  border-style: dashed;
-  border-collapse: collapse;
+  border: ridge black 3px;
+  border-style: dotted;
     
   border-top: none;
+  border-left: none;
 }
 
 .mine {
@@ -106,14 +106,23 @@ section {
 }
 
 .full {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
 
-  
-  border-style: ridge;
-  border-color: gray;
+  display: flex;
+  border-left:  white 3px;
+  border-top:  white 3px;
+  border-right-color: gray;
+  border-bottom-color: gray;
+  border-style: outset inset inset outset;
+
 }
 
-.case:nth-child(n + 1) {
-  border-left: none;
+#full-border-r-b {
+  border-bottom: solid black 3px;
+  border-right: solid black 3px;
+}
+
+.full:hover {
+  background-color: gray;
 }
